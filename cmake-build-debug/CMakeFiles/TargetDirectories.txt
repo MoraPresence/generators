@@ -1,0 +1,3 @@
+C:/Users/od341/CLionProjects/testGalua/cmake-build-debug/CMakeFiles/testGalua.dir
+C:/Users/od341/CLionProjects/testGalua/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/od341/CLionProjects/testGalua/cmake-build-debug/CMakeFiles/rebuild_cache.dir
