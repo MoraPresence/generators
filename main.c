@@ -23,7 +23,7 @@ struct allGenerators {
 int isSimple(uint64_t n) //проверка на простое число
 {
     if (n > 1) {
-        for (int i = 2; i < n; i++)
+        for (int i = 2; i < sqrt(n); i++)
             if (n % i == 0)
                 return FALSE;
         return TRUE;
@@ -59,6 +59,7 @@ uint64_t checkArrays(uint64_t p, const uint64_t *checking,
     memcpy(checkingTmp, checking, p * sizeof(uint64_t));
     bubbleSort(checkingTmp, p - 1);
     if (checkingTmp[p - 1] != 1) return -1;
+    if (checkingTmp[0] != 1) return -1;
     uint64_t i;
     for (i = 0; i < p - 1; ++i) {
         if (checkingTmp[i] != checkers[i]) return -1;
